@@ -1,0 +1,61 @@
+@import './base.css';
+
+.btn-dang-nhap {
+  background-color: #264653;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 7px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 165px;
+  height: 40px;
+}
+
+.btn-dang-nhap:hover {
+  background-color: #565656;
+  transform: translateY(-2px);
+}
+
+.btn-dang-nhap:active {
+  background-color: #565656;
+  transform: translateY(0)
+}
+
+.font-size-btn {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  background-color: #E9FEED;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+@media (hover: hover) {
+
+  .font-size-btn:hover {
+  color: #fff;  /* Màu chữ khi hover */
+  padding: 5px;  /* Thêm khoảng đệm khi hover */
+  /* border-radius: 5px; */
+  transform: translateY(-1px);
+  }
+}
+
+@media () {
+  body {
+    display: flex;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
