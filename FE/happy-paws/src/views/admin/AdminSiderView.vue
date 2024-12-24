@@ -112,8 +112,8 @@ const toggleBtn = () => {
 }
 
 .sidebar {
-  width: 270px;
-  margin-top: 20px;
+  width: 290px;
+  margin-top: 16px;
   border-radius: 15px;
   position: fixed;
   background: #e9feed;
