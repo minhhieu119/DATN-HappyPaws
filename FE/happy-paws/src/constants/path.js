@@ -7,6 +7,14 @@ export const ROUTES_CONSTANTS = {
                 path: "/admin/lich-dat",
                 name: "lich-dat"
             },
+            DAT_LICH: {
+                path: "/admin/lich-dat/dat-lich",
+                name: "admin-dat-lich"
+            },
+            XAC_NHAN_LICH: {
+                path: "/admin/lich-dat/xac-nhan-lich",
+                name: "admin-xac-nhan-lich"
+            },
             CHUONG: {
                 path: "/admin/chuong",
                 name: "chuong"
