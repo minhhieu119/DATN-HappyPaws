@@ -112,7 +112,7 @@ const toggleBtn = () => {
 }
 
 .sidebar {
-  width: 290px;
+  width: 330px;
   border-radius:0 15px 15px 0;
   background: #e9feed;
   height: calc(100vh - 32px);
