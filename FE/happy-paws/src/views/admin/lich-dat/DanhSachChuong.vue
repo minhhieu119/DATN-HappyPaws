@@ -1,8 +1,8 @@
 <template>
   <div class="m-3">
-    <h5>Trạng thái chuồng</h5>
-    <div class="row">
-      <div class="col-3 card" v-for="chuong in listChuongs" :key="chuong.id">
+    <h4>Trạng thái chuồng</h4>
+    <div class="row m-3">
+      <div class="col-2 mt-2 me-2 card" v-for="chuong in listChuongs" :key="chuong.id">
         <div class="card-body">
           <h5 class="card-title"> {{chuong.name}}</h5>
           <a href="#" class="btn btn-primary">Go</a>
@@ -17,7 +17,7 @@
 const listChuongs = [
     {
         id: 1,
-        name: "Chuồng 1",
+        name: "Chuồng nhỏ",
         status: "EMPTY"
     },
     {
@@ -78,4 +78,15 @@ const listChuongs = [
 ]
 
 </script>
+
+<style scoped>
+    h5 {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 140px;
+        text-align: center;
+    }
+</style>
 
