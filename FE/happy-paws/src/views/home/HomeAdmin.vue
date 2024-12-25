@@ -2,12 +2,12 @@
   <div class="header-view">
     <header-admin />
   </div>
-  <div class="container">
-    <div class="row d-flex justify-content: flex-end;">
-      <div :class="collapse ? 'col-1' : 'col-3'">
+  <div>
+    <div class="row d-flex justify-content: flex-end;" style="width: 1915px">
+      <div :class="collapse ? 'col-1 mt-3' : 'col-2 mt-3 pe-0'">
         <admin-sider-view @update:collapse="handleCollapseChange" />
       </div>
-      <div :class="collapse ? 'col-11 mt-3 ps-3 pe-3' : 'col-9 mt-3 ps-0 pe-3'">
+      <div :class="collapse ? 'col-11 mt-3 ps-3' : 'col-10 mt-3 ps-0 pe-0'">
         <router-view />
       </div>
     </div>
@@ -28,11 +28,8 @@ const handleCollapseChange = (newColl) => {
 </script>
 
 <style scoped>
+
 .header-view {
   background: #e9feed;
-}
-
-.content {
-  float: right;
 }
 </style>

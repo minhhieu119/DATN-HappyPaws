@@ -2,12 +2,12 @@
   <div class="header-view">
     <header-admin />
   </div>
-  <div class="container">
-    <div class="row">
-      <div :class="collapse ? 'col-1' : 'col-3'">
+  <div>
+    <div class="row d-flex justify-content: flex-end;" style="width: 1915px">
+      <div :class="collapse ? 'col-1 mt-3' : 'col-2 mt-3 pe-0'">
         <staff-sider-view @update:collapse="handleCollapseChange" />
       </div>
-      <div :class="collapse ? 'col-9 m-5' : 'col-8 mt-5 ms-3'">
+      <div :class="collapse ? 'col-11 mt-3 ps-3' : 'col-10 mt-3 ps-0 pe-0'">
         <router-view />
       </div>
     </div>

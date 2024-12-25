@@ -1,5 +1,5 @@
 <template>
-  <aside :class="{ sidebar: true, collapsed: collapse }">
+  <aside :class="{ sidebar: true, collapsed: collapse}">
     <header class="siderbar-header">
       <button class="toggler" @click="toggleBtn">
         <span class="material-symbols-rounded">
@@ -113,9 +113,7 @@ const toggleBtn = () => {
 
 .sidebar {
   width: 290px;
-  margin-top: 16px;
-  border-radius: 15px;
-  position: fixed;
+  border-radius:0 15px 15px 0;
   background: #e9feed;
   height: calc(100vh - 32px);
   transition: 0.4s ease;
@@ -223,5 +221,6 @@ const toggleBtn = () => {
   pointer-events: auto;
   transform: translateY(50%);
   transition: 0.4s ease;
+  z-index: 9999;
 }
 </style>
