@@ -100,10 +100,8 @@ const toggleBtn = () => {
 }
 
 .sidebar {
-  width: 270px;
-  margin-top: 20px;
+  width: 290px;
   border-radius: 15px;
-  position: fixed;
   background: #e9feed;
   height: calc(100vh - 32px);
   transition: 0.4s ease;

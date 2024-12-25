@@ -16,7 +16,6 @@
 
 .header-view {
     height: 130px;
-    border-bottom: 1px solid #000;
 }
 
 .font-size-logo {
