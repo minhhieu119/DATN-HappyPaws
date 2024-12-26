@@ -13,12 +13,23 @@ const router = createRouter({
       path: ROUTES_CONSTANTS.ADMIN.path,
       name: ROUTES_CONSTANTS.ADMIN.name,
       component: () => import("@/views/home/HomeAdmin.vue"),
-      redirect: ROUTES_CONSTANTS.ADMIN.children.LICH_DAT.path,
+      redirect: ROUTES_CONSTANTS.ADMIN.children.DAT_LICH.path,
       children: [
         {
           path: ROUTES_CONSTANTS.ADMIN.children.LICH_DAT.path,
           name: ROUTES_CONSTANTS.ADMIN.children.LICH_DAT.name,
-          component: () => import("@/views/admin/lich-dat/LichDatView.vue"),
+          children: [
+            {
+              path: ROUTES_CONSTANTS.ADMIN.children.DAT_LICH.path,
+              name: ROUTES_CONSTANTS.ADMIN.children.DAT_LICH.name,
+              component: () => import("@/views/admin/lich-dat/LichDatView.vue"),
+            },
+            {
+              path: ROUTES_CONSTANTS.ADMIN.children.XAC_NHAN_LICH.path,
+              name: ROUTES_CONSTANTS.ADMIN.children.XAC_NHAN_LICH.name,
+              component: () => import("@/views/admin/lich-dat/XacNhanLich.vue"),
+            }
+          ]
         },
         {
           path: ROUTES_CONSTANTS.ADMIN.children.CHUONG.path,
