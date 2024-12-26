@@ -23,12 +23,12 @@
 }
 
 .btn-dang-nhap:hover {
-  background-color: #565656;
+  background-color: #2a9d8f;
   transform: translateY(-2px);
 }
 
 .btn-dang-nhap:active {
-  background-color: #565656;
+  background-color: #2a9d8f;
   transform: translateY(0)
 }
 
@@ -46,8 +46,21 @@
   color: black;
 }
 
-@media (hover: hover) {
+.btn-form {
+  background-color: #264653;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  height: 40px;
+  width: 130px;
+  border: none;
+}
 
+.btn-form:hover {
+  background-color: #2a9d8f;
+}
+
+@media (hover: hover) {
   .font-size-btn:hover {
   color: #fff;  /* Màu chữ khi hover */
   padding: 5px;  /* Thêm khoảng đệm khi hover */
@@ -56,7 +69,7 @@
   }
 }
 
-@media () {
+/* @media () {
   body {
     display: flex;
   }
@@ -64,4 +77,4 @@
   #app {
     padding: 0 2rem;
   }
-}
+} */

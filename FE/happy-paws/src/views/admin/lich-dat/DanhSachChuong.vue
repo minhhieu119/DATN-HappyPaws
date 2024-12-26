@@ -1,6 +1,6 @@
 <template>
   <div class="m-3">
-    <h4>Trạng thái chuồng</h4>
+    <h4>Danh sách chuồng</h4>
     <div class="row m-3">
       <div class="col-2 mt-2 me-2 card" v-for="chuong in listChuongs" :key="chuong.id">
         <div class="card-body">
